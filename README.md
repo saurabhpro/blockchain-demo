@@ -12,19 +12,19 @@ http://anders.com/blockchain/
 Get the code:
 
 ```
-git clone https://github.com/anders94/blockchain-demo.git
+git clone https://github.com/saurabhpro/blockchain-demo.git
 ```
 
 Install dependencies:
 
 ```
 cd blockchain-demo
-npm install
+yarn install
 ```
 Run the server:
 
 ```
-npm start
+yarn start
 ```
 
 OR
@@ -48,7 +48,7 @@ http://localhost:3000
 Get the code:
 
 ```
-git clone https://github.com/anders94/blockchain-demo.git
+git clone https://github.com/saurabhpro/blockchain-demo.git
 ```
 
 Run the Docker setup:
@@ -106,4 +106,4 @@ The 2nd part of the 101 session:
 
 ![](public/images/qr.png)
 
-Bitcoin gratefully accepted: `1K3NvcuZzVTueHW1qhkG2Cm3viRkh2EXJp`
+Bitcoin gratefully accepted: `<>`
