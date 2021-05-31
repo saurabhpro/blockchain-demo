@@ -36,7 +36,7 @@ block content
               span.ladda-label #{__('Mine')}
 
   script.
-    $(function() {
+    $(() => {
       mineButtonAnimation(1, 1);
       updateHash(1, 1);
     });
@@ -50,9 +50,9 @@ block content
     function mineButtonAnimation(block, chain) {
       $('#block'+block+'chain'+chain+'mineButton').click(function(e) {
           e.preventDefault();
-          var l = Ladda.create(this);
+          const l = Ladda.create(this);
           l.start();
-          setTimeout(function() {
+          setTimeout(() => {
               mine(block, chain, false);
               l.stop();
             }, 250); // give UI time to update

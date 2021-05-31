@@ -4,7 +4,7 @@ block content
   .container-fluid
     h1 #{__('Blockchain')}
     .row.row-horizon
-      - var blocks = []
+      - let blocks = []
       - blocks.push({block: 1, chain: 1, nonce: 11316, previous: '0000000000000000000000000000000000000000000000000000000000000000'})
       - blocks.push({block: 2, chain: 1, nonce: 35230, previous: '000015783b764259d382017d91a36d206d0600e2cbb3567748f46a33fe9297cf'})
       - blocks.push({block: 3, chain: 1, nonce: 12937, previous: '000012fa9b916eb9078f8d98a7864e697ae83ed54f5146bd84452cdafd043c19'})
@@ -15,7 +15,7 @@ block content
           include includes/block
 
   script.
-    $(function() {
+    $(() => {
       setup(1, 1);
       setup(2, 1);
       setup(3, 1);
@@ -34,9 +34,9 @@ block content
       updateHash(block, chain);
       $('#block'+block+'chain'+chain+'mineButton').click(function(e) {
           e.preventDefault();
-          var l = Ladda.create(this);
+          const l = Ladda.create(this);
           l.start();
-          setTimeout(function() {
+          setTimeout(() => {
               mine(block, chain, true);
               l.stop();
             }, 250); // give UI time to update

@@ -25,12 +25,8 @@
     "async": "^3.2.0",
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
-    "debug": ">=4.3.1",
     "express": "^4.17.1",
     "i18n": "0.13.3",
-    "morgan": ">=1.10.0",
-    "prettier": "^2.3.0",
-    "pug": "^3.0.2",
     "serve-favicon": "^2.5.0"
   },
   "homepage": "https://github.com/saurabhpro/blockchain-demo#readme",
@@ -39,5 +35,12 @@
       "name": "anders",
       "email": "anders-git@evantide.com"
     }
-  ]
+  ],
+  "devDependencies": {
+    "morgan": ">=1.10.0",
+    "pug": "^3.0.2",
+    "debug": ">=4.3.1",
+    "prettier": "^2.3.0",
+    "nodemon": "^2.0.7"
+  }
 }
