@@ -1,34 +1,34 @@
-.well(id='block'+block.block+'chain'+block.chain+'well')
-  form.form-horizontal
+.card(id='block'+block.block+'chain'+block.chain+'well')
+  form
 
-    .form-group
+    .row.m-3
       label.col-sm-2.control-label(for='block'+block.block+'chain'+block.chain+'number') #{__('Block')}:
       .col-sm-10
         .input-group
-          span.input-group-addon #
+          span.input-group-text #
           input.form-control(id='block'+block.block+'chain'+block.chain+'number', type='number', value=block.block onchange='updateChain('+block.block+', '+block.chain+');' onkeyup='updateChain('+block.block+', '+block.chain+');')
 
-    .form-group
+    .row.m-3
       label.col-sm-2.control-label(for='block'+block.block+'chain'+block.chain+'nonce') #{__('Nonce')}:
       .col-sm-10
          input.form-control(id='block'+block.block+'chain'+block.chain+'nonce', type='text', value=block.nonce, onkeyup='updateChain('+block.block+', '+block.chain+');')
 
-    .form-group
+    .row.m-3
       label.col-sm-2.control-label(for='block'+block.block+'chain'+block.chain+'data') #{__('Data')}:
       .col-sm-10
         textarea.form-control(id='block'+block.block+'chain'+block.chain+'data', rows='10', onkeyup='updateChain('+block.block+', '+block.chain+');')
 
-    #state.form-group
+    #state.row.m-3
       label.col-sm-2.control-label(for='block'+block.block+'chain'+block.chain+'previous') #{__('Prev')}:
       .col-sm-10
         input.form-control(id='block'+block.block+'chain'+block.chain+'previous', type='text', value=block.previous, disabled)
 
-    #state.form-group
+    #state.row.m-3
       label.col-sm-2.control-label(for='block'+block.block+'chain'+block.chain+'hash') #{__('Hash')}:
       .col-sm-10
         input.form-control(id='block'+block.block+'chain'+block.chain+'hash', type='text', disabled)
 
-    .form-group
+    .row.m-3
       .col-sm-2
         i.icon-spinner.icon-spin.icon-large
       .col-sm-10

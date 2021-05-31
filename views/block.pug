@@ -3,32 +3,32 @@ extends layout
 block content
   .container
     h1 #{__('Block')}
-    .well#block1chain1well
-      form.form-horizontal
+    .card#block1chain1well
+      form
 
-        .form-group
+        .row.m-3
           label.col-sm-2.control-label(for='block1chain1number') #{__('Block')}:
           .col-sm-10
             .input-group
-              span.input-group-addon #
+              span.input-group-text #
               input#block1chain1number.form-control(type='number', value='1' onchange='updateHash(1, 1);' onkeyup='updateHash(1, 1);')
 
-        .form-group
+        .row.m-3
           label.col-sm-2.control-label(for='block1chain1nonce') #{__('Nonce')}:
           .col-sm-10
              input#block1chain1nonce.form-control(type='text', value='72608', onkeyup='updateHash(1, 1);')
 
-        .form-group
+        .row.m-3
           label.col-sm-2.control-label(for='block1chain1data') #{__('Data')}:
           .col-sm-10
             textarea#block1chain1data.form-control(rows='10', onkeyup='updateHash(1, 1);')
 
-        #state.form-group
+        #state.row.m-3
           label.col-sm-2.control-label(for='block1chain1hash') #{__('Hash')}:
           .col-sm-10
             input#block1chain1hash.form-control(type='text', disabled)
 
-        .form-group
+        .row.m-3
           .col-sm-2
             i.icon-spinner.icon-spin.icon-large
           .col-sm-10
